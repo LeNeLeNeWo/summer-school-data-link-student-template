@@ -96,6 +96,7 @@ def run_checks() -> list[Result]:
         require_one("M1系统处理流程图", ["docs/M1_system_flow.pdf", "docs/M1_system_flow.png", "docs/M1_system_flow.md"]),
         require_one("M1接口、通信与风险说明", ["docs/M1_interface_risk.pdf", "docs/M1_interface_risk.docx", "docs/M1_interface_risk.md"]),
         require_one("M4映射核验说明", ["docs/M4_mapping_review.pdf", "docs/M4_mapping_review.docx", "docs/M4_mapping_review.md"]),
+        require_file("docs/M5_result_note.md"),
         require_one("M6展示材料", ["docs/M6_presentation.pdf", "docs/M6_presentation.pptx"]),
     ]
     encoded = OUTPUT_ROOT / "encoded_messages.bin"
